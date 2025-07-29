@@ -1,0 +1,17 @@
+rules:
+  - given: "$.paths[*]"
+    then:
+      - field: "$.paths[*].get.responses[200].description"
+        function: truthy
+        message: "Every GET response must have a description."
+      - field: "$.paths[*].post.requestBody.content['application/json'].schema"
+        function: truthy
+        message: "Every POST request must have a request body schema."
+  - given: "$.components.schemas[*]"
+    then:
+      - field: "$.type"
+        function: truthy
+        message: "Every schema must have a type defined."
+      - field: "$.properties"
+        function: truthy
+        message: "Every schema must have properties defined."

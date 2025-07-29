@@ -1,0 +1,28 @@
+{
+  "name": "azure-devops-lint-task",
+  "version": "1.0.0",
+  "description": "A custom Azure DevOps extension task to lint API specification files against custom Spectral rulesets.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "spectral": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "eslint": "^7.0.0",
+    "jest": "^26.0.0"
+  },
+  "keywords": [
+    "azure-devops",
+    "extension",
+    "lint",
+    "api",
+    "spectral"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
