@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "spectral": "^5.0.0"
+    "@stoplight/spectral": "^6.0.0"
   },
   "devDependencies": {
     "typescript": "^4.0.0",
